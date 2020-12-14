@@ -28,13 +28,37 @@ namespace Microservice2.Repository
             return ls;
         }
 
-        public SPContext getCompanyStockPrice(int cid,DateTime dt)
+        public float getCompanyStockPrice(int cid,DateTime fm,DateTime to)
         {
-            var new_list = (from p in ctx.SPContexts
-                           join c in ctx.CContexts on p.Ccode equals cid
-                           where p.Tstamp==dt
-                           select p).FirstOrDefault();
-            return new_list;
+            //var new_list = (from p in ctx.SPContexts
+            //               join c in ctx.CContexts on p.Ccode equals cid
+            //               where p.Tstamp==dt
+            //               select p).FirstOrDefault();
+            //return new_list;
+           
+             IEnumerable<DateTime> EachDay(DateTime from, DateTime thru)
+            {
+                for (var day = from.Date; day.Date <= thru.Date; day = day.AddDays(1))
+                    yield return day;
+            }
+            int TSP = 0;
+            int d = 0;
+            foreach (DateTime day in EachDay(fm, to))
+            {
+                int SP = (from p in ctx.SPContexts
+                                join c in ctx.CContexts on p.Ccode equals cid
+                                where p.Tstamp.Date == day.Date
+                                select p.price).FirstOrDefault();
+                if (SP != 0)
+                {
+                    d += 1;
+                }
+                TSP = TSP + SP;
+            }
+
+            return TSP/d;
+
+
         }
 
         public IEnumerable<CContext> getMatchingCompanies(string Cpattern)

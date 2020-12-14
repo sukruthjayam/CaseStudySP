@@ -22,13 +22,13 @@ namespace Microservice5.Repository
 
         public IEnumerable<CContext> GetCompaniesList(String Sname)
         {
-            var id = (from var1 in ctx.SEContexts
+            var Stockid = (from var1 in ctx.SEContexts
                       where var1.name == Sname
                       select var1.sid).First();
-            var query = from article in ctx.CContexts
-                        where article.StockExchange.Any(c => c.sid == id)
-                        select article;
-            return query;
+            var CompList = from item in ctx.CContexts
+                        where item.StockExchange.Any(c => c.sid == Stockid)
+                        select item;
+            return CompList;
         }
 
         public IEnumerable<SEContext> getStockExchangesList()

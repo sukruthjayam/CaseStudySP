@@ -12,6 +12,6 @@ namespace Microservice4.Entities
         {
 
         }
-        public DbSet<UContext> SEContexts { get; set; }
+        public DbSet<UContext> UserContexts { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace Microservice2.Repository
         //getMatchingCompanies 
         //getCompanyDetails 
         //getCompanyIPODetails
-        public SPContext getCompanyStockPrice(int cid,DateTime dt);
+        public float getCompanyStockPrice(int cid,DateTime fm,DateTime to);
         public IEnumerable<CContext> getCompanyDetails();
         public IEnumerable<IPOContext> getCompanyIPODetails(string Cname);
         public IEnumerable<CContext> getMatchingCompanies(string Cpattern);

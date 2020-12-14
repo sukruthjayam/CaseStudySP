@@ -9,18 +9,17 @@ using Microservice5.Entities;
 
 namespace Microservice5.Controllers
 {
-    [Route("api/[controller]/[action]")]
+    [Route("api/[controller]")]
     [ApiController]
-    public class Microservice5Controller : ControllerBase
+    public class StockExchange : ControllerBase
     {
         IRepository5 repo;
-        public Microservice5Controller(IRepository5 repo)
+        public StockExchange(IRepository5 repo)
         {
             this.repo = repo;
         }
 
         [HttpGet]
-        [ProducesResponseType(404)]
         public IActionResult getSEData()
         {
             var ls = repo.getStockExchangesList();
@@ -31,8 +30,7 @@ namespace Microservice5.Controllers
             return Ok(ls);
         }
 
-        [HttpGet]
-        [ProducesResponseType(404)]
+        [HttpGet("{Sname}")]
         public IActionResult getCompData(String Sname)
         {
             var ls = repo.GetCompaniesStock(Sname);
@@ -44,8 +42,6 @@ namespace Microservice5.Controllers
         }
 
         [HttpPost]
-        [ProducesResponseType(201)]
-        [ProducesResponseType(400)]
         public IActionResult addSEdata(SEContext obj)
         {
             if (ModelState.IsValid == false)

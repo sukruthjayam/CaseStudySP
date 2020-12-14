@@ -9,15 +9,12 @@ namespace Microservice4.Repositories
     public interface IRepository4
     {
 
-       
-//        User Login
-//Admin Login
-//User Signup
-         public void UserLogin(UContext obj)
-        {
 
-        }
+        public bool Login(string name, string pass);
 
+
+
+        public bool UserSignup(UContext obj);
 
 
     }
