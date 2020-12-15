@@ -25,7 +25,7 @@ namespace Microservice3.Repositories
                             select com).Distinct();
             
 
-            return CompList;
+            return CompList.ToList();
         }
 
         public IEnumerable<SPriceContext> getSectorPrice(string Sname)
@@ -52,7 +52,7 @@ namespace Microservice3.Repositories
             }
 
 
-            return comp_list;
+            return comp_list.ToList();
         }
     }
 }

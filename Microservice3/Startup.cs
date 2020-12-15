@@ -30,6 +30,7 @@ namespace Microservice3
             services.AddDbContext<DBContext>(options => options.UseSqlServer(connection));
             services.AddScoped<IRepository3, Repository3>();
             services.AddControllers();
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +42,7 @@ namespace Microservice3
             }
 
             app.UseRouting();
-
+            app.UseCors(settings => settings.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

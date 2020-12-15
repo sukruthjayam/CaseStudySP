@@ -11,7 +11,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice2", "Microservi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice4", "Microservice4\Microservice4.csproj", "{8C95B03E-36EE-432B-A065-B2BB17F17071}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice3", "Microservice3\Microservice3.csproj", "{5817DC62-173E-47F5-8FF7-B39E6B9317A0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microservice3", "Microservice3\Microservice3.csproj", "{5817DC62-173E-47F5-8FF7-B39E6B9317A0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject5", "NUnitTestProject5\NUnitTestProject5.csproj", "{F698CF25-C6CF-4071-BF1E-F994FFB778DE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject3", "NUnitTestProject3\NUnitTestProject3.csproj", "{8CFE0008-F2CD-4CA2-A258-7637BDF5E765}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject4", "NUnitTestProject4\NUnitTestProject4.csproj", "{E3981E0A-C54D-4026-91EA-4C786546043C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NUnitTestProject2", "NUnitTestProject2\NUnitTestProject2.csproj", "{8F5632A6-1D94-4209-9F87-31EBF2822E2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GateWayApi", "GateWayApi\GateWayApi.csproj", "{78F1105D-0A77-47BC-8C83-9C7FC4183789}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microservice1", "Microservice1\Microservice1.csproj", "{B9FEA8BE-645B-477D-80D6-4EA79FF45DE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +51,30 @@ Global
 		{5817DC62-173E-47F5-8FF7-B39E6B9317A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5817DC62-173E-47F5-8FF7-B39E6B9317A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5817DC62-173E-47F5-8FF7-B39E6B9317A0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F698CF25-C6CF-4071-BF1E-F994FFB778DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F698CF25-C6CF-4071-BF1E-F994FFB778DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F698CF25-C6CF-4071-BF1E-F994FFB778DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F698CF25-C6CF-4071-BF1E-F994FFB778DE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8CFE0008-F2CD-4CA2-A258-7637BDF5E765}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8CFE0008-F2CD-4CA2-A258-7637BDF5E765}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8CFE0008-F2CD-4CA2-A258-7637BDF5E765}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8CFE0008-F2CD-4CA2-A258-7637BDF5E765}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3981E0A-C54D-4026-91EA-4C786546043C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3981E0A-C54D-4026-91EA-4C786546043C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3981E0A-C54D-4026-91EA-4C786546043C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3981E0A-C54D-4026-91EA-4C786546043C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8F5632A6-1D94-4209-9F87-31EBF2822E2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8F5632A6-1D94-4209-9F87-31EBF2822E2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8F5632A6-1D94-4209-9F87-31EBF2822E2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8F5632A6-1D94-4209-9F87-31EBF2822E2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78F1105D-0A77-47BC-8C83-9C7FC4183789}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78F1105D-0A77-47BC-8C83-9C7FC4183789}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78F1105D-0A77-47BC-8C83-9C7FC4183789}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78F1105D-0A77-47BC-8C83-9C7FC4183789}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9FEA8BE-645B-477D-80D6-4EA79FF45DE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9FEA8BE-645B-477D-80D6-4EA79FF45DE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9FEA8BE-645B-477D-80D6-4EA79FF45DE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9FEA8BE-645B-477D-80D6-4EA79FF45DE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

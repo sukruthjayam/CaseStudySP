@@ -18,7 +18,7 @@ namespace Microservice5.Controllers
         {
             this.repo = repo;
         }
-
+       
         [HttpGet]
         public IActionResult getSEData()
         {
@@ -50,7 +50,7 @@ namespace Microservice5.Controllers
             var result = repo.addStockExchange(obj);
             if (!result)
                 return BadRequest("Error saving products");
-            return StatusCode(201);
+            return Created("No Url",new { message="company added"});
             
         }
 

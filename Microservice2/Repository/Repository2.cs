@@ -22,21 +22,24 @@ namespace Microservice2.Repository
 
         public IEnumerable<IPOContext> getCompanyIPODetails(string Coname)
         {
-           var ls = from item in ctx.IPOContexts
+           var ls = (from item in ctx.IPOContexts
                             where item.Cname == Coname
-                            select item;
-            return ls;
+                            select item);
+            if (ls.Count() == 0) {
+                return null;
+            }
+            return ls.ToList();
         }
 
         public float getCompanyStockPrice(int cid,DateTime fm,DateTime to)
         {
             //var new_list = (from p in ctx.SPContexts
-            //               join c in ctx.CContexts on p.Ccode equals cid
-            //               where p.Tstamp==dt
-            //               select p).FirstOrDefault();
+            //                join c in ctx.CContexts on p.Ccode equals cid
+            //                where p.Tstamp == dt
+            //                select p).FirstOrDefault();
             //return new_list;
-           
-             IEnumerable<DateTime> EachDay(DateTime from, DateTime thru)
+
+            IEnumerable<DateTime> EachDay(DateTime from, DateTime thru)
             {
                 for (var day = from.Date; day.Date <= thru.Date; day = day.AddDays(1))
                     yield return day;
@@ -46,9 +49,9 @@ namespace Microservice2.Repository
             foreach (DateTime day in EachDay(fm, to))
             {
                 int SP = (from p in ctx.SPContexts
-                                join c in ctx.CContexts on p.Ccode equals cid
-                                where p.Tstamp.Date == day.Date
-                                select p.price).FirstOrDefault();
+                          join c in ctx.CContexts on p.Ccode equals cid
+                          where p.Tstamp.Date == day.Date
+                          select p.price).FirstOrDefault();
                 if (SP != 0)
                 {
                     d += 1;
@@ -56,7 +59,7 @@ namespace Microservice2.Repository
                 TSP = TSP + SP;
             }
 
-            return TSP/d;
+            return TSP / d;
 
 
         }

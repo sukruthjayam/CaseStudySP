@@ -56,8 +56,8 @@ C:\Users\socgend10\Desktop\CaseStudy\Microservice3\bin\Debug\netcoreapp3.1\runti
 C:\Users\socgend10\Desktop\CaseStudy\Microservice3\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\socgend10\Desktop\CaseStudy\Microservice3\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\socgend10\Desktop\CaseStudy\Microservice3\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\socgend10\Desktop\CaseStudy\Microservice3\obj\Debug\netcoreapp3.1\Microservice3.csproj.CoreCompileInputs.cache
-C:\Users\socgend10\Desktop\CaseStudy\Microservice3\obj\Debug\netcoreapp3.1\Microservice3.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\socgend10\Desktop\CaseStudy\Microservice3\obj\Debug\netcoreapp3.1\Microservice3.dll
 C:\Users\socgend10\Desktop\CaseStudy\Microservice3\obj\Debug\netcoreapp3.1\Microservice3.pdb
 C:\Users\socgend10\Desktop\CaseStudy\Microservice3\obj\Debug\netcoreapp3.1\Microservice3.genruntimeconfig.cache
+C:\Users\socgend10\Desktop\CaseStudy\Microservice3\obj\Debug\netcoreapp3.1\Microservice3.csproj.CoreCompileInputs.cache
+C:\Users\socgend10\Desktop\CaseStudy\Microservice3\obj\Debug\netcoreapp3.1\Microservice3.MvcApplicationPartsAssemblyInfo.cache

@@ -31,7 +31,7 @@ namespace Microservice2
             services.AddDbContext<DBContext>(options => options.UseSqlServer(connection));
            services.AddScoped<IRepository2, Repository2>();
             services.AddControllers();
-       
+            services.AddCors();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -41,7 +41,7 @@ namespace Microservice2
             {
                 app.UseDeveloperExceptionPage();
             }
-
+            app.UseCors(settings => settings.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseRouting();
 
             app.UseAuthorization();

@@ -36,8 +36,8 @@ namespace Microservice4.Controllers
                 return BadRequest(ModelState);
             var result = repo.UserSignup(user);
             if (!result)
-                return BadRequest("Error saving products");
-            return StatusCode(201);
+                return BadRequest("Error saving data");
+            return Created("No url",new { message="created successfully" });
 
         }
 

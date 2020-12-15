@@ -56,8 +56,8 @@ C:\Users\socgend10\Desktop\CaseStudy\Microservice5\bin\Debug\netcoreapp3.1\Micro
 C:\Users\socgend10\Desktop\CaseStudy\Microservice5\bin\Debug\netcoreapp3.1\Microservice5.pdb
 C:\Users\socgend10\Desktop\CaseStudy\Microservice5\bin\Debug\netcoreapp3.1\Humanizer.dll
 C:\Users\socgend10\Desktop\CaseStudy\Microservice5\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
-C:\Users\socgend10\Desktop\CaseStudy\Microservice5\obj\Debug\netcoreapp3.1\Microservice5.csproj.CoreCompileInputs.cache
-C:\Users\socgend10\Desktop\CaseStudy\Microservice5\obj\Debug\netcoreapp3.1\Microservice5.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\socgend10\Desktop\CaseStudy\Microservice5\obj\Debug\netcoreapp3.1\Microservice5.dll
 C:\Users\socgend10\Desktop\CaseStudy\Microservice5\obj\Debug\netcoreapp3.1\Microservice5.pdb
 C:\Users\socgend10\Desktop\CaseStudy\Microservice5\obj\Debug\netcoreapp3.1\Microservice5.genruntimeconfig.cache
+C:\Users\socgend10\Desktop\CaseStudy\Microservice5\obj\Debug\netcoreapp3.1\Microservice5.csproj.CoreCompileInputs.cache
+C:\Users\socgend10\Desktop\CaseStudy\Microservice5\obj\Debug\netcoreapp3.1\Microservice5.MvcApplicationPartsAssemblyInfo.cache

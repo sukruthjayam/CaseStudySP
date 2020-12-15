@@ -1,0 +1,19 @@
+{
+  "Routes": [
+    {
+      "DownstreamScheme": "http",
+      "DownstreamPathTemplate": "/api/Login/{url}",
+      "DownstreamHostandPorts": [
+        {
+          "Host": "localhost",
+          "Port": 59494
+        }
+      ],
+      "UpstreamPathTemplate": "/api/LoginService/{url}",
+      "UpstreamHttpMethods": [ "GET", "POST" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "http://localhost:54473"
+  }
+}

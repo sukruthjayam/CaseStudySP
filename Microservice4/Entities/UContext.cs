@@ -11,7 +11,9 @@ namespace Microservice4.Entities
         
         [Key]
         public int ID { get; set; }
+        [Required]
         public string Uname { get; set; }
+        [Required]
         public string password { get; set; }
         public string  usertype { get; set; }
         public string email { get;set;  }

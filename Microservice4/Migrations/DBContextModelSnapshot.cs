@@ -26,6 +26,7 @@ namespace Microservice4.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Uname")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("confirmed")
@@ -35,6 +36,7 @@ namespace Microservice4.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("password")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<double>("pnumber")

@@ -21,9 +21,9 @@ namespace Microservice2.Controllers
         public IActionResult getcompanyipodetails(string coname)
         {
             var ls = repo.getCompanyIPODetails(coname);
-            if (ls.Count() == 0)
+            if (ls == null)
             {
-                return NoContent();
+                return NotFound();
             }
             return Ok(ls);
         }

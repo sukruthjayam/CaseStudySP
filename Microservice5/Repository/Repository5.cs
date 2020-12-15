@@ -28,7 +28,7 @@ namespace Microservice5.Repository
             var CompList = from item in ctx.CContexts
                         where item.StockExchange.Any(c => c.sid == Stockid)
                         select item;
-            return CompList;
+            return CompList.ToList();
         }
 
         public IEnumerable<SEContext> getStockExchangesList()
@@ -44,10 +44,11 @@ namespace Microservice5.Repository
            var id = (from var1 in ctx.SEContexts
                      where var1.name==Sname
                      select var1.sid).First();
+            
            var query = from article in ctx.CContexts
                         where article.StockExchange.Any(c => c.sid == id)
                         select article;
-            return query;
+            return query.ToList();
         }
     }
 }
