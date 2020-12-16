@@ -4,12 +4,12 @@
     "C:\\Users\\socgend10\\Desktop\\CaseStudy\\NUnitTestProject4\\NUnitTestProject4.csproj": {}
   },
   "projects": {
-    "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\Microservice4.csproj": {
+    "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\M4Login.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\Microservice4.csproj",
-        "projectName": "Microservice4",
-        "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\Microservice4.csproj",
+        "projectUniqueName": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\M4Login.csproj",
+        "projectName": "M4Login",
+        "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\M4Login.csproj",
         "packagesPath": "C:\\Users\\socgend10\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\obj\\",
         "projectStyle": "PackageReference",
@@ -112,8 +112,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\Microservice4.csproj": {
-                "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\Microservice4.csproj"
+              "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\M4Login.csproj": {
+                "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice4\\M4Login.csproj"
               }
             }
           }

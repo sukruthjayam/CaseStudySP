@@ -14,9 +14,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice1\\Microservice1.csproj",
-      "projectName": "Microservice1",
-      "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice1\\Microservice1.csproj",
+      "projectUniqueName": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice1\\M1Upload.csproj",
+      "projectName": "M1Upload",
+      "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice1\\M1Upload.csproj",
       "packagesPath": "C:\\Users\\socgend10\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice1\\obj\\",
       "projectStyle": "PackageReference",

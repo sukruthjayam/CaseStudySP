@@ -23,6 +23,10 @@ namespace Microservice3.Controllers
         public IActionResult getSectorPrice(string Sname)
         {
             var ls = repo.getSectorPrice(Sname);
+            if (ls.Count() == 0)
+            {
+                return NotFound();
+            }
             return Ok(ls);
         }
     }

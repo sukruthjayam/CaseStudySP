@@ -17,8 +17,8 @@ namespace Microservice3.Repositories
         {
             var Secid = (from item in ctx.SecContexts
                            where item.Sname == Sname
-                           select item.Sid).First();
-
+                           select item.Sid).FirstOrDefault();
+          
 
             var CompList = (from com in ctx.CompContexts
                             join  sec in ctx.SecContexts on com.Sectorid equals Secid
@@ -35,7 +35,7 @@ namespace Microservice3.Repositories
 
             int Secid = (from item in ctx.SecContexts
                          where item.Sname == Sname
-                         select item.Sid).First();
+                         select item.Sid).FirstOrDefault();
 
 
             var CompIDList = (from com in ctx.CompContexts

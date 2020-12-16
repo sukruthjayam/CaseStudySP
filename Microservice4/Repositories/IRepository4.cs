@@ -1,4 +1,5 @@
-﻿using Microservice4.Entities;
+﻿using M4Login.Entities;
+using Microservice4.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -10,7 +11,7 @@ namespace Microservice4.Repositories
     {
 
 
-        public bool Login(string name, string pass);
+        public ValidationResponseModel Login(string name, string pass);
 
 
 

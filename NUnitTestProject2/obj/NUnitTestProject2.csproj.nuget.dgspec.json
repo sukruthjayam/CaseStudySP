@@ -4,12 +4,12 @@
     "C:\\Users\\socgend10\\Desktop\\CaseStudy\\NUnitTestProject2\\NUnitTestProject2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\Microservice2.csproj": {
+    "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\M2Company.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\Microservice2.csproj",
-        "projectName": "Microservice2",
-        "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\Microservice2.csproj",
+        "projectUniqueName": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\M2Company.csproj",
+        "projectName": "M2Company",
+        "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\M2Company.csproj",
         "packagesPath": "C:\\Users\\socgend10\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\obj\\",
         "projectStyle": "PackageReference",
@@ -112,8 +112,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\Microservice2.csproj": {
-                "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\Microservice2.csproj"
+              "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\M2Company.csproj": {
+                "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice2\\M2Company.csproj"
               }
             }
           }

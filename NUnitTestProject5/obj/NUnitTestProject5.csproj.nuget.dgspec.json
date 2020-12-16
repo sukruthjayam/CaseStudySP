@@ -4,12 +4,12 @@
     "C:\\Users\\socgend10\\Desktop\\CaseStudy\\NUnitTestProject5\\NUnitTestProject5.csproj": {}
   },
   "projects": {
-    "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\Microservice5.csproj": {
+    "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\M5StockExchange.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\Microservice5.csproj",
-        "projectName": "Microservice5",
-        "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\Microservice5.csproj",
+        "projectUniqueName": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\M5StockExchange.csproj",
+        "projectName": "M5StockExchange",
+        "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\M5StockExchange.csproj",
         "packagesPath": "C:\\Users\\socgend10\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\obj\\",
         "projectStyle": "PackageReference",
@@ -112,8 +112,8 @@
         "frameworks": {
           "netcoreapp3.1": {
             "projectReferences": {
-              "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\Microservice5.csproj": {
-                "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\Microservice5.csproj"
+              "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\M5StockExchange.csproj": {
+                "projectPath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\Microservice5\\M5StockExchange.csproj"
               }
             }
           }

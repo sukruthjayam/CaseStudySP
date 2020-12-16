@@ -32,6 +32,10 @@ namespace Microservice2.Controllers
         {
 
             var ls = repo.getMatchingCompanies(Cpattr);
+            if (ls.Count() == 0) {
+
+                return NotFound();
+            }
             return Ok(ls);
         }
 

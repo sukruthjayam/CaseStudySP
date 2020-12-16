@@ -42,11 +42,19 @@
       "frameworks": {
         "netcoreapp3.1": {
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[3.1.10, )"
+            },
             "Microsoft.AspNetCore.Cors": {
               "target": "Package",
               "version": "[2.2.0, )"
             },
             "Ocelot": {
+              "target": "Package",
+              "version": "[15.0.7, )"
+            },
+            "Ocelot.Provider.Consul": {
               "target": "Package",
               "version": "[15.0.7, )"
             }

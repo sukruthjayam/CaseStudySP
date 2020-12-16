@@ -22,6 +22,10 @@ namespace Microservice3.Controllers
         public IActionResult getList(string Secname)
         {
             var ls = repo.getList(Secname);
+            if (ls.Count() == 0)
+            {
+                return NotFound();
+            }
             return Ok(ls);
         }
 

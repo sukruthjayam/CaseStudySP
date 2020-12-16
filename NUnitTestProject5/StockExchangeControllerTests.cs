@@ -14,7 +14,7 @@ namespace NUnitTestProject5
     [TestFixture]
     class StockExchangeControllerTests
     {
-        StockExchange se;
+        StockExchangeController se;
         SEContext se_data;
           [OneTimeSetUp]
         public void Initialize()
@@ -27,7 +27,7 @@ namespace NUnitTestProject5
             DbContextOptions<DBContext> options = new DbContextOptionsBuilder<DBContext>().UseSqlServer(str).Options;
             DBContext ObjContext = new DBContext(options);
             IRepository5 rp = new Repository5(ObjContext);
-            se = new StockExchange(rp);
+            se = new StockExchangeController(rp);
             se_data = new SEContext(){ name = "demo", brief = "demo", address = "demo", remarks = "demo" };
         }
         [Test]

@@ -51,6 +51,14 @@ namespace NUnitTestProject2
             Assert.AreEqual(200, result.StatusCode.Value);
         }
 
+        [Test]
+        public void CompanyStockPrice() {
+
+            DateTime fm = new DateTime(2008 , 11 , 11, 13,23,44) ;
+            DateTime to = new DateTime(2008, 11, 13, 13, 23, 44);
+            var result = Comp.getCompanyStockPrice(3, fm,to) as ObjectResult;
+            Assert.IsInstanceOf<IEnumerable<SPContext>>(result.Value);
+        }
       
     }
 }
