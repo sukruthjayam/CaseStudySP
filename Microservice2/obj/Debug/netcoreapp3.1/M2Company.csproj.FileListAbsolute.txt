@@ -60,5 +60,10 @@ C:\Users\socgend10\Desktop\CaseStudy\Microservice2\obj\Debug\netcoreapp3.1\M2Com
 C:\Users\socgend10\Desktop\CaseStudy\Microservice2\obj\Debug\netcoreapp3.1\M2Company.genruntimeconfig.cache
 C:\Users\socgend10\Desktop\CaseStudy\Microservice2\obj\Debug\netcoreapp3.1\M2Company.csprojAssemblyReference.cache
 C:\Users\socgend10\Desktop\CaseStudy\Microservice2\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Users\socgend10\Desktop\CaseStudy\Microservice2\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\socgend10\Desktop\CaseStudy\Microservice2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\socgend10\Desktop\CaseStudy\Microservice2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\socgend10\Desktop\CaseStudy\Microservice2\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\socgend10\Desktop\CaseStudy\Microservice2\obj\Debug\netcoreapp3.1\M2Company.csproj.CoreCompileInputs.cache
+C:\Users\socgend10\Desktop\CaseStudy\Microservice2\obj\Debug\netcoreapp3.1\M2Company.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\socgend10\Desktop\CaseStudy\Microservice2\obj\Debug\netcoreapp3.1\M2Company.MvcApplicationPartsAssemblyInfo.cache

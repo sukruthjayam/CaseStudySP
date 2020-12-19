@@ -20,6 +20,8 @@ namespace Microservice5.Controllers
         }
        
         [HttpGet]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
         public IActionResult getSEData()
         {
             var ls = repo.getStockExchangesList();
@@ -31,17 +33,21 @@ namespace Microservice5.Controllers
         }
 
         [HttpGet("{Sname}")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
         public IActionResult getCompData(String Sname)
         {
             var ls = repo.GetCompaniesStock(Sname);
             if (ls.Count() == 0)
             {
-                return NoContent();
+                return NotFound();
             }
             return Ok(ls);
         }
 
         [HttpPost]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(201)]
         public IActionResult addSEdata(SEContext obj)
         {
             if (ModelState.IsValid == false)

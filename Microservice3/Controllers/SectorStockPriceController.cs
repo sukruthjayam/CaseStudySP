@@ -20,6 +20,8 @@ namespace Microservice3.Controllers
         }
 
         [HttpGet("{Sname}")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
         public IActionResult getSectorPrice(string Sname)
         {
             var ls = repo.getSectorPrice(Sname);

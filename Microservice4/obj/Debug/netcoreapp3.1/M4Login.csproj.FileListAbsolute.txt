@@ -61,5 +61,10 @@ C:\Users\socgend10\Desktop\CaseStudy\Microservice4\obj\Debug\netcoreapp3.1\M4Log
 C:\Users\socgend10\Desktop\CaseStudy\Microservice4\obj\Debug\netcoreapp3.1\M4Login.genruntimeconfig.cache
 C:\Users\socgend10\Desktop\CaseStudy\Microservice4\bin\Debug\netcoreapp3.1\Consul.dll
 C:\Users\socgend10\Desktop\CaseStudy\Microservice4\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\socgend10\Desktop\CaseStudy\Microservice4\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\socgend10\Desktop\CaseStudy\Microservice4\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\socgend10\Desktop\CaseStudy\Microservice4\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\socgend10\Desktop\CaseStudy\Microservice4\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\socgend10\Desktop\CaseStudy\Microservice4\obj\Debug\netcoreapp3.1\M4Login.csproj.CoreCompileInputs.cache
+C:\Users\socgend10\Desktop\CaseStudy\Microservice4\obj\Debug\netcoreapp3.1\M4Login.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\socgend10\Desktop\CaseStudy\Microservice4\obj\Debug\netcoreapp3.1\M4Login.MvcApplicationPartsAssemblyInfo.cache

@@ -38,6 +38,12 @@ namespace Microservice2.Migrations
                     b.Property<string>("listed")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("sector")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("stockexc")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("cid");
 
                     b.ToTable("CContexts");

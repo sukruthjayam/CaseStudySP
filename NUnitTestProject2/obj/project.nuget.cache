@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "c9XUtsuHcx4h1X0CjvdtMlh/76+xp/cG+r6B5uaQgZRfZpP/xrmHduyOW5gQa03qtUVptDcB4GCDKCkbCMqxcA==",
+  "dgSpecHash": "AOARi8k1WXOh/P3Ds1IpocEbrpJxnIGXTdOhkn/oUdXI6pAn7DrvaModJMH7CiVfX7kfYqxwaBEAMJvM0TMQBg==",
   "success": true,
   "projectFilePath": "C:\\Users\\socgend10\\Desktop\\CaseStudy\\NUnitTestProject2\\M2CompanyTests.csproj",
   "expectedPackageFiles": [
@@ -46,6 +46,7 @@
     "C:\\Users\\socgend10\\.nuget\\packages\\microsoft.net.test.sdk\\16.4.0\\microsoft.net.test.sdk.16.4.0.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\microsoft.netcore.platforms\\3.1.0\\microsoft.netcore.platforms.3.1.0.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\microsoft.netcore.targets\\1.1.3\\microsoft.netcore.targets.1.1.3.nupkg.sha512",
+    "C:\\Users\\socgend10\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\microsoft.testplatform.objectmodel\\16.4.0\\microsoft.testplatform.objectmodel.16.4.0.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\microsoft.testplatform.testhost\\16.4.0\\microsoft.testplatform.testhost.16.4.0.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\microsoft.win32.primitives\\4.3.0\\microsoft.win32.primitives.4.3.0.nupkg.sha512",
@@ -58,6 +59,9 @@
     "C:\\Microsoft\\Xamarin\\NuGet\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\nunit3testadapter\\3.15.1\\nunit3testadapter.3.15.1.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\runtime.native.system\\4.3.0\\runtime.native.system.4.3.0.nupkg.sha512",
+    "C:\\Users\\socgend10\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\5.6.3\\swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "C:\\Users\\socgend10\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\5.6.3\\swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "C:\\Users\\socgend10\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\5.6.3\\swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\system.appcontext\\4.1.0\\system.appcontext.4.1.0.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\socgend10\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

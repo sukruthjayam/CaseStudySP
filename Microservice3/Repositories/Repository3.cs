@@ -13,6 +13,14 @@ namespace Microservice3.Repositories
         {
             this.ctx = ctx;
         }
+
+        public IEnumerable<SectorContext> getAllSectors()
+        {
+            var ls = from item in ctx.SecContexts 
+                     select item;
+            return ls.ToList();
+        }
+
         public IEnumerable<CompanyContext> getList(string Sname)
         {
             var Secid = (from item in ctx.SecContexts

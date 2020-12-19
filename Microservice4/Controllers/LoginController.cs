@@ -29,6 +29,8 @@ namespace Microservice4.Controllers
         }
 
         [HttpGet("{name}/{pass}")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
         public IActionResult Login(string name,string pass)
         {
            ValidationResponseModel vrm = repo.Login(name, pass);
@@ -64,7 +66,10 @@ namespace Microservice4.Controllers
            
             return token;
         }
+
             [HttpPost]
+        [ProducesResponseType(400)]
+        [ProducesResponseType(201)]
         public IActionResult Signup(UContext user) {
             if (ModelState.IsValid == false)
                 return BadRequest(ModelState);

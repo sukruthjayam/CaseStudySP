@@ -12,5 +12,6 @@ namespace Microservice3.Repositories
         //getSectorPrice 
         public IEnumerable<CompanyContext> getList(string Sname);
         public IEnumerable<SPriceContext> getSectorPrice(string Sname);
+        public IEnumerable<SectorContext> getAllSectors();
     }
 }

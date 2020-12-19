@@ -12,6 +12,8 @@ namespace Microservice2.Entities
         public int cid { get; set; }
         public string cname { get; set; }
         public string ceo { get; set; }
+        public string sector { get; set; }
+        public string stockexc { get; set; }
         public string listed { get; set; }
         public string desc { get; set; }
     }

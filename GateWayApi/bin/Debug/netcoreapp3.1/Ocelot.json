@@ -5,11 +5,11 @@
       "DownstreamPathTemplate": "/api/{url}",
       "ServiceName": "CompanyCatalog",
       "UpstreamPathTemplate": "/api/CompanyService/{url}",
-      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "sukruth",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethods": [ "GET" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "sukruth",
+      //  "AllowedScopes": []
+      //}
 
     },
     {
@@ -17,11 +17,11 @@
       "DownstreamPathTemplate": "/api/{url}",
       "ServiceName": "SectorCatalog",
       "UpstreamPathTemplate": "/api/SectorService/{url}",
-      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "sukruth",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethods": [ "GET","DELETE","POST","PUT" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "sukruth",
+      //  "AllowedScopes": []
+      //}
 
     },
     {
@@ -37,11 +37,11 @@
       "DownstreamPathTemplate": "/api/{url}",
       "ServiceName": "StockExchangeCatalog",
       "UpstreamPathTemplate": "/api/StockService/{url}",
-      "UpstreamHttpMethods": [ "GET", "POST", "PUT", "DELETE" ],
-      "AuthenticationOptions": {
-        "AuthenticationProviderKey": "sukruth",
-        "AllowedScopes": []
-      }
+      "UpstreamHttpMethods": [ "GET", "POST" ]
+      //"AuthenticationOptions": {
+      //  "AuthenticationProviderKey": "sukruth",
+      //  "AllowedScopes": []
+      //}
 
     }
   ],

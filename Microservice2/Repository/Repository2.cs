@@ -20,15 +20,68 @@ namespace Microservice2.Repository
             return ls.ToList();
         }
 
-        public IEnumerable<IPOContext> getCompanyIPODetails(string Coname)
+        public CContext getCompanyDetailsByID(int cid)
+        {
+            CContext ls = ctx.CContexts.Find(cid);
+            if (ls == null) {
+                return null;
+            }
+            return ls;
+        }
+
+        public CContext UpdateCompany(CContext comp)
+        {
+            CContext UC = ctx.CContexts.Find(comp.cid);
+            UC.cname = comp.cname;
+            UC.desc = comp.desc;
+            UC.ceo = comp.ceo;
+            UC.listed = comp.listed;
+            ctx.CContexts.Update(UC);
+            ctx.SaveChanges();
+            return UC;
+        }
+
+        public string addCompany(CContext c)
+        {
+            ctx.CContexts.Add(c);
+            ctx.SaveChanges();
+            return "added successfully";
+        }
+
+        public string delCompanyDetails(int cid)
+        {
+            CContext ls = ctx.CContexts.Find(cid);
+            if (ls == null)
+            {
+                return null;
+            }
+           ctx.CContexts.Remove(ls);
+            ctx.SaveChanges();
+            return "Company Successfully Deleted";
+        }
+        public IPOContext getCompanyIPODetails(string Coname)
         {
            var ls = (from item in ctx.IPOContexts
                             where item.Cname == Coname
-                            select item);
-            if (ls.Count() == 0) {
+                            select item).FirstOrDefault();
+            if (ls == null) {
                 return null;
             }
-            return ls.ToList();
+            return ls;
+        }
+
+        public string UpdateIPO(IPOContext nipo)
+        {
+            IPOContext oipo = ctx.IPOContexts.Find(nipo.Iid);
+            oipo.Iid = nipo.Iid;
+            oipo.Cname = nipo.Cname;
+            oipo.StockExchage = nipo.StockExchage;
+            oipo.open_time = nipo.open_time;
+            oipo.price_per_share = nipo.price_per_share;
+            oipo.Total_shares = nipo.Total_shares;
+            ctx.IPOContexts.Update(oipo);
+            ctx.SaveChanges();
+            return "update successful";
         }
 
         public IEnumerable<SPContext> getCompanyStockPrice(int cid,DateTime fm,DateTime to)
@@ -74,5 +127,7 @@ namespace Microservice2.Repository
                                          || x.cname.Contains(Cpattern));                                                                   
             return ls;
         }
+
+       
     }
 }

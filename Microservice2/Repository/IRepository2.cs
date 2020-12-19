@@ -13,8 +13,12 @@ namespace Microservice2.Repository
         //getCompanyIPODetails
         public IEnumerable<SPContext> getCompanyStockPrice(int cid,DateTime fm,DateTime to);
         public IEnumerable<CContext> getCompanyDetails();
-        public IEnumerable<IPOContext> getCompanyIPODetails(string Cname);
+        public CContext getCompanyDetailsByID(int cid);
+        public string delCompanyDetails(int cid);
+        public string addCompany(CContext c);
+        public IPOContext getCompanyIPODetails(string Cname);
+        public string UpdateIPO(IPOContext ipo);
         public IEnumerable<CContext> getMatchingCompanies(string Cpattern);
-
+        public CContext UpdateCompany(CContext com);
     }
 }

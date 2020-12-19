@@ -13,6 +13,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.OpenApi.Models;
 
 namespace Microservice2
 {
@@ -31,7 +32,13 @@ namespace Microservice2
             var connection = Configuration.GetConnectionString("Constr");
             services.AddDbContext<DBContext>(options => options.UseSqlServer(connection));
            services.AddScoped<IRepository2, Repository2>();
-            services.AddControllers();
+            services.AddMvcCore().AddApiExplorer();
+            services.AddSwaggerGen(o => o.SwaggerDoc("v1", new OpenApiInfo()
+            {
+                Title = "Company Api",
+                Version = "v1"
+            }));
+          
             services.AddCors();
             services.AddSingleton<IConsulClient, ConsulClient>(options => new ConsulClient(config =>
             {
@@ -57,12 +64,13 @@ namespace Microservice2
             var applifetime = app.ApplicationServices.GetRequiredService<IHostApplicationLifetime>();
             applifetime.ApplicationStarted.Register(() => client.Agent.ServiceRegister(registration).ConfigureAwait(true));
             applifetime.ApplicationStopped.Register(() => client.Agent.ServiceDeregister(registration.ID).ConfigureAwait(true));
-
+            app.UseSwagger();
+            app.UseSwaggerUI(o => o.SwaggerEndpoint("/swagger/v1/swagger.json", "Company Api"));
 
             app.UseCors(settings => settings.AllowAnyOrigin().AllowAnyHeader().AllowAnyMethod());
             app.UseRouting();
 
-            app.UseAuthorization();
+            //app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

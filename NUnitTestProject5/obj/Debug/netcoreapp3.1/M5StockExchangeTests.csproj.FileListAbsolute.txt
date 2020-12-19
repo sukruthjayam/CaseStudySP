@@ -148,3 +148,8 @@ C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\obj\Debug\netcoreapp3.1\M
 C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\obj\Debug\netcoreapp3.1\M5StockExchangeTests.dll
 C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\obj\Debug\netcoreapp3.1\M5StockExchangeTests.pdb
 C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\obj\Debug\netcoreapp3.1\M5StockExchangeTests.genruntimeconfig.cache
+C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\bin\Debug\netcoreapp3.1\Consul.dll
+C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\bin\Debug\netcoreapp3.1\Microsoft.OpenApi.dll
+C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\socgend10\Desktop\CaseStudy\NUnitTestProject5\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerUI.dll
