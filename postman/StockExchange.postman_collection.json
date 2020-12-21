@@ -1,0 +1,80 @@
+{
+	"info": {
+		"_postman_id": "9417f90e-d429-448f-87c9-c6e218323ff2",
+		"name": "StockExchange",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "All StockExchanges",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50553/api/c",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50553",
+					"path": [
+						"api",
+						"c"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Company details of certain Stock Exchange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50553/api/StockExchange/bse",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50553",
+					"path": [
+						"api",
+						"StockExchange",
+						"bse"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Add New Stock Exchange",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"demo1\",\r\n    \"address\": \"demo\",\r\n    \"brief\":\"demo\",\r\n    \"remarks\":\"demo\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50553/api/StockExchange",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50553",
+					"path": [
+						"api",
+						"StockExchange"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

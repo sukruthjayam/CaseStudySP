@@ -45,6 +45,7 @@ namespace NUnitTestProject2
         }
 
         [Test]
+
         public void IPODetails_list()
         {
             var result =  ipo.getcompanyipodetails("SG") as ObjectResult ;
@@ -53,7 +54,6 @@ namespace NUnitTestProject2
 
         [Test]
         public void CompanyStockPrice() {
-
             DateTime fm = new DateTime(2008 , 11 , 11, 13,23,44) ;
             DateTime to = new DateTime(2008, 11, 13, 13, 23, 44);
             var result = Comp.getCompanyStockPrice(3, fm,to) as ObjectResult;

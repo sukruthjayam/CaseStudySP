@@ -13,8 +13,8 @@ namespace Microservice4.Repositories
 
         public ValidationResponseModel Login(string name, string pass);
 
-
-
+        public string UpdateProfile(UContext us);
+        public UContext getUser(int id);
         public bool UserSignup(UContext obj);
 
 

@@ -31,6 +31,19 @@ namespace Microservice2.Controllers
             return Ok(ls);
         }
 
+        [HttpGet]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
+        public IActionResult getallIPO()
+        {
+            var ls = repo.AllIPO();
+            if (ls == null)
+            {
+                return NotFound();
+            }
+            return Ok(ls);
+        }
+
         [HttpPut]
         [ProducesResponseType(200)]
         public IActionResult UpdateIPO(IPOContext ipo)

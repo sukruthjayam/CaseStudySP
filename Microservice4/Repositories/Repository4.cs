@@ -36,6 +36,25 @@ namespace Microservice4.Repositories
             return vm;
         }
 
+        public string UpdateProfile(UContext newus)
+        {
+            UContext oldus = ctx.UserContexts.Find(newus.ID);
+            oldus.email = newus.email;
+            oldus.pnumber = newus.pnumber;
+            oldus.Uname = newus.Uname;
+            oldus.password = newus.password;
+            ctx.UserContexts.Update(oldus);
+            ctx.SaveChanges();
+            return "Update Successful";
+        }
+
+        public UContext getUser(int id) {
+            UContext user = ctx.UserContexts.Find(id);
+            if (user==null) {
+                return user;
+            }
+            return user;
+        }
         public bool UserSignup(UContext obj)
         {
             ctx.UserContexts.Add(obj);

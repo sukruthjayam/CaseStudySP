@@ -18,6 +18,7 @@ namespace Microservice2.Repository
         public string addCompany(CContext c);
         public IPOContext getCompanyIPODetails(string Cname);
         public string UpdateIPO(IPOContext ipo);
+        public IEnumerable<IPOContext> AllIPO();
         public IEnumerable<CContext> getMatchingCompanies(string Cpattern);
         public CContext UpdateCompany(CContext com);
     }

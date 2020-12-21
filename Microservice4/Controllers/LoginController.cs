@@ -43,6 +43,29 @@ namespace Microservice4.Controllers
             return Ok(vrm);
         }
 
+        [HttpGet("{id}")]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
+        public IActionResult getUserbyId(int id)
+        {
+           UContext vrm = repo.getUser(id);
+
+            if (vrm == null)
+            {
+                return NotFound("user not found");
+            }
+           
+            return Ok(vrm);
+        }
+
+        [HttpPut]
+        [ProducesResponseType(404)]
+        [ProducesResponseType(200)]
+        public IActionResult UpdateProfile(UContext user)
+        {
+            string upduser = repo.UpdateProfile(user);  
+            return Ok(upduser);
+        }
         private string GenerateToken(string userType, string username)
         {
             string token = string.Empty;
@@ -67,7 +90,7 @@ namespace Microservice4.Controllers
             return token;
         }
 
-            [HttpPost]
+        [HttpPost]
         [ProducesResponseType(400)]
         [ProducesResponseType(201)]
         public IActionResult Signup(UContext user) {

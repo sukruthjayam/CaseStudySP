@@ -36,6 +36,8 @@ namespace Microservice2.Repository
             UC.desc = comp.desc;
             UC.ceo = comp.ceo;
             UC.listed = comp.listed;
+            UC.stockexc = comp.stockexc;
+            UC.sector = comp.sector;
             ctx.CContexts.Update(UC);
             ctx.SaveChanges();
             return UC;
@@ -57,7 +59,7 @@ namespace Microservice2.Repository
             }
            ctx.CContexts.Remove(ls);
             ctx.SaveChanges();
-            return "Company Successfully Deleted";
+            return "Company Deleted";
         }
         public IPOContext getCompanyIPODetails(string Coname)
         {
@@ -84,6 +86,12 @@ namespace Microservice2.Repository
             return "update successful";
         }
 
+        public IEnumerable<IPOContext> AllIPO()
+        {
+            var ls = from item in ctx.IPOContexts
+                     select item;
+            return ls.ToList();
+                }
         public IEnumerable<SPContext> getCompanyStockPrice(int cid,DateTime fm,DateTime to)
         {
             //var new_list = (from p in ctx.SPContexts

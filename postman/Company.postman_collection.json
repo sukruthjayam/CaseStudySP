@@ -1,0 +1,166 @@
+{
+	"info": {
+		"_postman_id": "049c30c9-5176-4709-95b4-a11e9f53f479",
+		"name": "Company",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "StockPrice in a given period",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50966/api/Company/3/2008-11-11 13:23:44/2008-11-13 13:23:44",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50966",
+					"path": [
+						"api",
+						"Company",
+						"3",
+						"2008-11-11 13:23:44",
+						"2008-11-13 13:23:44"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "CompanyMatching",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50966/api/Microservice2/w",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50966",
+					"path": [
+						"api",
+						"Microservice2",
+						"w"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "IPO details",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50966/api/IPO/wipro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50966",
+					"path": [
+						"api",
+						"IPO",
+						"wipro"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Companies",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50966/api/Company/getbyid/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50966",
+					"path": [
+						"api",
+						"Company",
+						"getbyid",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50966/api/IPO",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{ \r\n    \"iid\": 2,\r\n    \"cname\": \"SG\",\r\n    \"stockExchage\": \"nse\",\r\n    \"price_per_share\": \"1000\",\r\n    \"total_shares\": 10000,\r\n    \"open_time\": \"2008-11-11T13:23:44\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:50966/api/IPO",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50966",
+					"path": [
+						"api",
+						"IPO"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50966/api/Company",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50966/api/Company",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50966",
+					"path": [
+						"api",
+						"Company"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:50680/api/SectorList",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50680/api/SectorList",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50680",
+					"path": [
+						"api",
+						"SectorList"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

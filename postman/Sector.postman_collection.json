@@ -1,0 +1,52 @@
+{
+	"info": {
+		"_postman_id": "a7fae96e-b7c8-4f9e-8cb0-fafd90a031c5",
+		"name": "Sector",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Companies in a sector",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50680/api/SectorList/finance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50680",
+					"path": [
+						"api",
+						"SectorList",
+						"finance"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stock Price of a Sector",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:50680/api/SectorStockPrice/finance",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "50680",
+					"path": [
+						"api",
+						"SectorStockPrice",
+						"finance"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

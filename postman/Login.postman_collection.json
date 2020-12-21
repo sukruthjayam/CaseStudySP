@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "899c406e-8eb1-4c3b-9480-796e5f5a45fe",
+		"name": "Login",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Add User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " \r\n\r\n        {\r\n            \"uname\":\"admin\",\r\n            \"password\":\"admin123\",\r\n            \"usertype\":\"admin\",\r\n            \"email\":\"abc@gmail.com\",\r\n            \"pnumber\":12345,\r\n            \"confirmed\":\"yes\"\r\n        }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:59494/api/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59494",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Login User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:59494/api/Login/admin/admin123",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59494",
+					"path": [
+						"api",
+						"Login",
+						"admin",
+						"admin123"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "UserById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:59494/api/Login/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59494",
+					"path": [
+						"api",
+						"Login",
+						"3"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 3,\r\n    \"uname\": \"user1\",\r\n    \"password\": \"pass1\",\r\n    \"usertype\": \"user\",\r\n    \"email\": \"abc@gmail.in\",\r\n    \"pnumber\": 123,\r\n    \"confirmed\": \"no\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:59494/api/Login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "59494",
+					"path": [
+						"api",
+						"Login"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
